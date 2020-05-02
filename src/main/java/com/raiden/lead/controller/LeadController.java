@@ -21,21 +21,21 @@ public class LeadController {
 	private ILeadService serviceLeads;
 	
 	@GetMapping("/leads")
-	public List<Lead> buscarTodos(){
-		return serviceLeads.buscarTodos();
+	public List<Lead> searchAll(){
+		return serviceLeads.searchAll();
 	}
 	
 	@PostMapping("/leads")
-	public Lead guardar(@RequestBody Lead lead) {
-	  serviceLeads.guardar(lead);
+	public Lead save(@RequestBody Lead lead) {
+	  serviceLeads.save(lead);
 	  return lead;
 	}
 
 
 	@DeleteMapping("/leads/{id}")
-	public String eliminar(@PathVariable("id") int idLead) {
-		serviceLeads.eliminar(idLead);
-		return "registro eliminado";
+	public String delete(@PathVariable("id") int leadId) {
+		serviceLeads.delete(leadId);
+		return "Deleted!";
 		
 	}
 	
