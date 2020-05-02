@@ -8,8 +8,8 @@ import com.raiden.lead.entity.Lead;
 
 public interface ILeadService {
 
-	List <Lead> buscarTodos();
-	void guardar(Lead lead);	
-	void eliminar(int idLead);
+	List <Lead> searchAll();
+	void save(Lead lead);
+	void delete(int idLead);
 	
 }
