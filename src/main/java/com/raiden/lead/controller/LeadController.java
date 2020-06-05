@@ -31,6 +31,14 @@ public class LeadController {
 	  return lead;
 	}
 
+	@GetMapping("/lead/getAll")
+	public List<Lead> searchAll2(){
+		return serviceLeads.searchAll();
+	}
+
+
+
+
 
 	@DeleteMapping("/leads/{id}")
 	public String delete(@PathVariable("id") int leadId) {
