@@ -36,10 +36,6 @@ public class LeadController {
 		return serviceLeads.searchAll();
 	}
 
-
-
-
-
 	@DeleteMapping("/leads/{id}")
 	public String delete(@PathVariable("id") int leadId) {
 		serviceLeads.delete(leadId);

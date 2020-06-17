@@ -6,4 +6,5 @@ import com.raiden.lead.entity.Lead;
 
 public interface LeadRepository extends JpaRepository<Lead, Integer> {
 
+
 }
