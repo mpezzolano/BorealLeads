@@ -23,7 +23,6 @@ public class Lead {
     private String ip;
 
 
-
     public Integer getId() {
         return id;
     }
